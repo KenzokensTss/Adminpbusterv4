@@ -1,20 +1,14 @@
-# BHEH's AdminPBuster
+# AdminPBuster v4 (Mod)
 
 <p align="center">
-<a href="https://www.blackhatethicalhacking.com"><img src="https://www.blackhatethicalhacking.com/wp-content/uploads/2022/06/BHEH_logo.png" width="300px" alt="BHEH"></a>
-</p>
-
-<p align="center">
-
 **If you think you can hide your Admin Panel, think again... Find it with AdminPBuster.**
-
 </p>
 
 ---
 
-**AdminPBuster** is written by **Chris "SaintDruG" Abou-Chabke** from **Black Hat Ethical Hacking** and is designed specifically for **Red Teams**, **Offensive Security Experts**, and **Bug Bounty Hunters** looking to discover hidden or obscured admin panels efficiently.
+**AdminPBuster** is a tool originally written by **Chris "SaintDruG" Abou-Chabke** from **Black Hat Ethical Hacking**, designed for finding hidden admin panels.
 
-*(v4 Mod): This version has been updated to remove external system dependencies (like curl) and uses Python's native 'requests' library, making it fully cross-platform. It also includes more flexible scanning options.*
+*(v4 Mod): This version is an independent modification updated to remove external system dependencies (like curl) and uses Python's native 'requests' library, making it fully cross-platform. It also includes more flexible scanning options. Full credit is given to the original author for the concept and base tool.*
 
 ---
 
@@ -28,18 +22,18 @@
 ## Description
 
 **AdminPBuster** is a Red Teaming Recon tool to find hidden admin panels on web applications using brute-forcing.
-Instead of bundling a static wordlist and bloating the tool, it **fetches an updated admin panel wordlist** directly from our GitHub repository (or optionally, uses a local wordlist provided by you).
+Instead of bundling a static wordlist, it **fetches an updated admin panel wordlist** directly from the original GitHub repository (or optionally, uses a local wordlist provided by you).
 
 - This keeps the tool **lightweight** and **easy to maintain**.
-- Whenever we update the hosted wordlist, **the tool automatically benefits**, without needing to update the script itself.
+- Whenever the hosted wordlist is updated, **the tool automatically benefits**.
 
-**Key technical goodies:**
+**Key technical goodies (v4 Mod):**
 - Multithreaded scanning using Python's native `requests` library
 - Flexible protocol handling (`--http` or default `https`)
 - Flexible domain handling (`--no-www` flag)
 - Real redirect following (`allow_redirects=True`)
 - No proxychains/Tor dependency
-- Optional randomized User-Agent headers (`-ua`) to simulate real traffic
+- Optional randomized User-Agent headers (`-ua`)
 - Optional custom wordlist (`-w`)
 - Optional custom status code reporting (`--status-codes`)
 
@@ -106,8 +100,8 @@ This tool has been tested on Kali Linux, but v4 is cross-platform and should wor
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/blackhatethicalhacking/AdminPBuster.git](https://github.com/blackhatethicalhacking/AdminPBuster.git)
-   cd AdminPanelFetcher
+   git clone [URL_ANDA_DI_SINI]
+   cd Adminpbusterv4
 Make the installer executable:
 
 Bash
@@ -142,7 +136,6 @@ Bash
 
 ./AdminPBuster.py -t example.com -th 10 -ua
 New v4 Usage Examples:
-
 Scan for multiple status codes (e.g., found, redirect, forbidden):
 
 Bash
@@ -159,12 +152,4 @@ Bash
 
 ./AdminPBuster.py -t sub.example.com --http --no-www
 Disclaimer
-This tool is provided for educational and research purpose only. The author of this project are no way responsible for any misuse of this tool. We use it to test under NDA agreements with clients and their consents for pentesting purposes and we never encourage to misuse or take responsibility for any damage caused !
-
-<h2 align="center"> <a href="https://store.blackhatethicalhacking.com/" target="_blank">BHEH Official Merch</a> </h2>
-
-<p align="center"> Introducing our Merch Store, designed for the Offensive Security community. Explore a curated collection of apparel and drinkware, perfect for both professionals and enthusiasts. Our selection includes premium t-shirts, hoodies, and mugs, each featuring bold hacking-themed slogans and graphics that embody the spirit of red teaming and offensive security. Hack with style and showcase your dedication to hacker culture with gear that’s as dynamic and resilient as you are. 😊 </p>
-
-<p align="center">
-
-<img src="https://github.com/blackhatethicalhacking/blackhatethicalhacking/blob/main/Merch_Promo.gif" width="540px" height="540"> </p>
+This tool is provided for educational and research purpose only. The author of this project (and this modification) are no way responsible for any misuse of this tool. We use it to test under NDA agreements with clients and their consents for pentesting purposes and we never encourage to misuse or take responsibility for any damage caused !
