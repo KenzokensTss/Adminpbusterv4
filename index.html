@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PENGUMUMAN RESMI: Daftar Personel Satgas Siber "Garda Nusa" TA 2026 - PUSPEN TNI</title>
+    <style>
+        /* BASE STYLES */
+        :root {
+            --tni-green: #1b3a24;
+            --tni-light-green: #2e5d3a;
+            --tni-gold: #d4af37;
+            --bg-gray: #f4f4f4;
+            --text-dark: #333;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif; }
+        body { background-color: var(--bg-gray); color: var(--text-dark); line-height: 1.6; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        a:hover { color: var(--tni-gold); }
+
+        /* HEADER */
+        .top-bar { background-color: #000; color: #ccc; font-size: 0.75rem; padding: 8px 0; text-align: center; letter-spacing: 0.5px; }
+        header { background: linear-gradient(135deg, var(--tni-green) 0%, #0f2214 100%); color: white; border-bottom: 4px solid var(--tni-gold); padding: 20px 0; }
+        .header-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 20px; padding: 0 20px; }
+        .logo img { height: 70px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3)); }
+        .site-title h1 { font-size: 1.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; line-height: 1.1; }
+        .site-title p { font-size: 0.9rem; color: var(--tni-gold); font-weight: 600; margin-top: 5px; }
+
+        /* NAV */
+        nav { background-color: var(--tni-light-green); box-shadow: 0 4px 6px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; overflow-x: auto; }
+        .nav-link { padding: 15px 20px; color: white; font-weight: 600; font-size: 0.9rem; border-right: 1px solid rgba(255,255,255,0.1); white-space: nowrap; }
+        .nav-link.active { background-color: var(--tni-gold); color: var(--tni-green); }
+        .nav-link:hover { background-color: rgba(255,255,255,0.1); }
+
+        /* MAIN CONTENT */
+        .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; display: grid; grid-template-columns: 3fr 1fr; gap: 30px; }
+        .content-area { background: white; padding: 40px; border-radius: 4px; box-shadow: 0 2px 15px rgba(0,0,0,0.05); }
+
+        /* NEWS ARTICLE */
+        .breadcrumb { font-size: 0.85rem; color: #666; margin-bottom: 15px; }
+        .news-header h1 { font-size: 2.2rem; color: var(--tni-green); margin-bottom: 15px; line-height: 1.3; }
+        .meta-data { border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 10px 0; margin-bottom: 25px; font-size: 0.9rem; color: #555; display: flex; justify-content: space-between; }
+        .badge-news { background: #cc0000; color: white; padding: 3px 8px; border-radius: 3px; font-size: 0.75rem; font-weight: bold; margin-right: 10px; }
+
+        .article-img { width: 100%; border-radius: 4px; overflow: hidden; margin-bottom: 10px; border: 1px solid #ddd; }
+        .article-img img { width: 100%; height: auto; display: block; }
+        .img-caption { font-size: 0.85rem; color: #666; font-style: italic; border-left: 3px solid var(--tni-gold); padding-left: 10px; margin-bottom: 30px; }
+
+        .content-body p { margin-bottom: 1.2rem; text-align: justify; font-size: 1.05rem; }
+        .content-body strong { color: var(--tni-green); }
+
+        /* TABLE STYLES */
+        .official-table-wrapper { overflow-x: auto; margin: 30px 0; border: 1px solid #ddd; border-radius: 4px; }
+        .official-table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        .official-table th { background-color: var(--tni-green); color: white; padding: 12px 15px; text-align: left; font-size: 0.9rem; text-transform: uppercase; }
+        .official-table td { padding: 10px 15px; border-bottom: 1px solid #eee; font-size: 0.95rem; }
+        .official-table tr:nth-child(even) { background-color: #f9f9f9; }
+        .official-table tr:hover { background-color: #f0f7f1; }
+        .rank-badge { font-weight: bold; color: var(--tni-green); font-size: 0.85rem; background: #e8f5e9; padding: 2px 6px; border-radius: 4px; }
+
+        /* SIDEBAR */
+        .widget { background: white; padding: 20px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-top: 4px solid var(--tni-green); margin-bottom: 20px; }
+        .widget h3 { font-size: 1.1rem; color: var(--tni-green); border-bottom: 2px solid #f4f4f4; padding-bottom: 10px; margin-bottom: 15px; }
+        .link-list li { list-style: none; margin-bottom: 10px; border-bottom: 1px dotted #ccc; padding-bottom: 10px; }
+        .link-list a { font-weight: 600; font-size: 0.9rem; color: #444; }
+
+        /* FOOTER */
+        footer { background-color: var(--tni-green); color: white; padding: 40px 0; margin-top: 50px; text-align: center; border-top: 5px solid var(--tni-gold); }
+        
+        @media (max-width: 768px) {
+            .container { grid-template-columns: 1fr; }
+            .header-inner { flex-direction: column; text-align: center; }
+            .news-header h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">Situs Resmi Pusat Penerangan Tentara Nasional Indonesia | Mabes TNI Cilangkap</div>
+
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Mabes_TNI.png" alt="Logo TNI">
+            </div>
+            <div class="site-title">
+                <h1>PUSPEN TNI</h1>
+                <p>Pusat Penerangan Tentara Nasional Indonesia</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-inner">
+            <a href="#" class="nav-link">BERANDA</a>
+            <a href="#" class="nav-link active">BERITA TERKINI</a>
+            <a href="#" class="nav-link">PENGUMUMAN</a>
+            <a href="#" class="nav-link">STRUKTUR ORGANISASI</a>
+            <a href="#" class="nav-link">LAYANAN INFORMASI</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content-area">
+            <div class="breadcrumb">Beranda / Pengumuman / <span>Personel Satgas Siber</span></div>
+            
+            <div class="news-header">
+                <h1>MABES TNI RILIS DAFTAR RESMI: 25 Perwira Tituler Satgas Siber "Garda Nusa" Dijadwalkan Dilantik Bersama Pa PK TNI TA 2026</h1>
+            </div>
+
+            <div class="meta-data">
+                <span><span class="badge-news">RESMI</span> Selasa, 27 Januari 2026</span>
+                <span>Penulis: <strong>Kolonel Inf. Admira (Puspen)</strong></span>
+            </div>
+
+            <div class="article-img">
+                <img src="https://placehold.co/800x400/1b3a24/d4af37?text=MABES+TNI:+PENGUMUMAN+RESMI+PERSONEL+SATGAS+SIBER+2026" alt="Banner Pengumuman">
+            </div>
+            <div class="img-caption">
+                ILUSTRASI: Gedung Soedirman Mabes TNI Cilangkap. TNI resmi merilis daftar nama 25 Perwira Tituler Satgas Siber untuk mengikuti Prasetya Perwira 2026.
+            </div>
+
+            <div class="content-body">
+                <p><strong>JAKARTA (27/01)</strong> – Markas Besar TNI melalui Keputusan Panglima TNI Nomor Kep/77/I/2026 tanggal 27 Januari 2026, secara resmi mengumumkan status definitif 25 personel Satuan Tugas Siber (Satgas Siber) "Garda Nusa".</p>
+
+                <p>Setelah menjalani masa orientasi operasi tertutup sejak Desember 2025, ke-25 tenaga ahli sipil ini dinyatakan memenuhi syarat administrasi dan kualifikasi untuk dikukuhkan sebagai <strong>Perwira TNI dengan Pangkat Tituler</strong>. Mereka dijadwalkan akan mengikuti Upacara Prasetya Perwira (Praspa) dan Pelantikan Perwira Prajurit Karier (Pa PK) TNI yang rencananya akan digelar pada <strong>April atau Mei 2026</strong> mendatang.</p>
+
+                <p>Aspers Panglima TNI dalam keterangannya menyebutkan bahwa pelantikan gabungan ini bertujuan untuk mengintegrasikan semangat korps (*Esprit de Corps*) antara perwira reguler dan perwira tituler ahli siber.</p>
+
+                <p><em>"Negara memanggil mereka bukan karena fisik mereka, tapi karena kecerdasan mereka. Pelantikan resmi nanti di bulan Mei akan menjadi simbol bahwa TNI siap menghadapi perang modern,"</em> ujar Aspers.</p>
+
+                <h3>Daftar Resmi Personel Satgas Siber "Garda Nusa"</h3>
+                <p>Demi keterbukaan informasi publik yang terukur, berikut adalah daftar nama lengkap dan jabatan 25 personel yang akan dilantik:</p>
+
+                <div class="official-table-wrapper">
+                    <table class="official-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 5%">No</th>
+                                <th style="width: 40%">Nama Lengkap & Pangkat</th>
+                                <th style="width: 55%">Jabatan / Spesialisasi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td><span class="rank-badge">KAPTEN TIT.</span> Satria Wibowo, S.T., Ph.D.</td><td><strong>Komandan Satgas (Dansatgas)</strong></td></tr>
+                            <tr><td>2</td><td><span class="rank-badge">LETDA TIT.</span> Indrayaza Z, S.E.</td><td><strong>Wakil Komandan (Wadan Satgas)</strong></td></tr>
+                            
+                            <tr><td>3</td><td><span class="rank-badge">LETDA TIT.</span> Rizky Pratama, S.Kom.</td><td>Ka. Tim Penindakan Jaringan</td></tr>
+                            <tr><td>4</td><td><span class="rank-badge">LETDA TIT.</span> Yuma Soerianto</td><td>Pa. Keamanan Seluler & iOS</td></tr>
+                            <tr><td>5</td><td><span class="rank-badge">LETDA TIT.</span> Devon Kei Enzo</td><td>Pa. Kriptografi & Matematika</td></tr>
+                            <tr><td>6</td><td><span class="rank-badge">LETDA TIT.</span> Budi Santoso, S.T.</td><td>Pa. Peretas Perangkat Keras (Hardware)</td></tr>
+                            <tr><td>7</td><td><span class="rank-badge">LETDA TIT.</span> Dr. Grandprix T.M. Kadja</td><td>Pa. Pertahanan Siber Kimia & Nuklir</td></tr>
+                            
+                            <tr><td>8</td><td><span class="rank-badge">LETDA TIT.</span> Gilang Ramadhan, S.Tr.Kom.</td><td>Ka. Tim Analisis Malware</td></tr>
+                            <tr><td>9</td><td><span class="rank-badge">LETDA TIT.</span> Ni Putu Ayu Lestari, S.T.</td><td>Pa. Keamanan SCADA (Listrik/Air)</td></tr>
+                            <tr><td>10</td><td><span class="rank-badge">LETDA TIT.</span> Ahmad Faisal, S.Kom.</td><td>Pa. Keamanan Komputasi Awan (Cloud)</td></tr>
+                            <tr><td>11</td><td><span class="rank-badge">LETDA TIT.</span> Sarah Hutapea, S.H., LL.M.</td><td>Pa. Hukum Siber Internasional</td></tr>
+                            <tr><td>12</td><td><span class="rank-badge">LETDA TIT.</span> Laksmi Dewi, S.T.</td><td>Pa. Pemulihan Sistem (Recovery)</td></tr>
+                            
+                            <tr><td>13</td><td><span class="rank-badge">LETDA TIT.</span> Deris Nagara, S.IP., M.P.A.</td><td>Pa. Intelijen Diplomatik</td></tr>
+                            <tr><td>14</td><td><span class="rank-badge">LETDA TIT.</span> Johanes Timang, S.E., Ak.</td><td>Pa. Forensik Keuangan Digital</td></tr>
+                            <tr><td>15</td><td><span class="rank-badge">LETDA TIT.</span> Naufal Raziq</td><td>Pa. Riset Energi Darurat</td></tr>
+                            <tr><td>16</td><td><span class="rank-badge">LETDA TIT.</span> Fransiskus Papare, S.T.</td><td>Pa. Intelijen Geospasial</td></tr>
+                            <tr><td>17</td><td><span class="rank-badge">LETDA TIT.</span> Dian Puspita, S.T.</td><td>Pa. Intelijen Sinyal (SIGINT)</td></tr>
+                            <tr><td>18</td><td><span class="rank-badge">LETDA TIT.</span> Fiki Naki</td><td>Pa. Linguistik & Negosiator</td></tr>
+                            <tr><td>19</td><td><span class="rank-badge">LETDA TIT.</span> Chandra Wijaya, S.Ds.</td><td>Pa. Intelijen Metaverse/Game</td></tr>
+                            <tr><td>20</td><td><span class="rank-badge">LETDA TIT.</span> dr. Muhammad Sobri Maulana, S.Kom.</td><td>Pa. Bio-Informatika & Medis</td></tr>
+                            <tr><td>21</td><td><span class="rank-badge">LETDA TIT.</span> Linus Nara Pradhana</td><td>Pa. Rekayasa Material</td></tr>
+                            <tr><td>22</td><td><span class="rank-badge">LETDA TIT.</span> Bagas Saputra, S.T.</td><td>Pa. Kecerdasan Buatan (AI)</td></tr>
+                            <tr><td>23</td><td><span class="rank-badge">LETDA TIT.</span> Hendra Gunawan, S.T.</td><td>Pa. Keamanan Avionik & Alutsista</td></tr>
+                            
+                            <tr><td>24</td><td><span class="rank-badge">LETDA TIT.</span> Zulfikar, S.H.</td><td>Ka. Unit Pengamanan Internal (Provost)</td></tr>
+                            <tr><td>25</td><td><span class="rank-badge">LETDA TIT.</span> Andre Rumengan, S.H.</td><td>Pa. Investigasi & Kontra-Intelijen</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>Seluruh personel di atas saat ini telah aktif bertugas di pos masing-masing dan berada di bawah pengawasan serta pembinaan Kodam/Kotama sesuai domisili. Masyarakat diimbau untuk mendukung tugas mulia para perwira muda ini.</p>
+                <p><strong>(Puspen TNI)</strong></p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="widget">
+                <h3>ARSIP PENGUMUMAN</h3>
+                <ul class="link-list">
+                    <li><a href="#">Jadwal Seleksi Pa PK TNI TA 2026</a></li>
+                    <li><a href="#">Surat Edaran Panglima TNI tentang Netralitas Pemilu</a></li>
+                    <li><a href="#">Daftar Mutasi Pati TNI Januari 2026</a></li>
+                </ul>
+            </div>
+            
+            <div class="widget">
+                <h3>TAUTAN TERKAIT</h3>
+                <ul class="link-list">
+                    <li><a href="#">Website SatSiber TNI</a></li>
+                    <li><a href="#">Kementerian Pertahanan RI</a></li>
+                    <li><a href="#">BSSN (Badan Siber & Sandi Negara)</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Pusat Penerangan Tentara Nasional Indonesia.</p>
+        <p>Jl. Raya Hankam Cilangkap, Jakarta Timur 13870</p>
+    </footer>
+
+</body>
+</html>
